@@ -1,0 +1,47 @@
+[
+  {
+    "outputFileName": "wwwroot/css/dist/theme-core.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/bootstrap-extended.css",
+      "wwwroot/css/colors.css",
+      "wwwroot/css/components.css",
+      "wwwroot/css/themes/dark-layout.css",
+      "wwwroot/css/themes/semi-dark-layout.css",
+      "wwwroot/css/core/menu/menu-types/vertical-menu.css",
+      "wwwroot/css/core/colors/palette-gradient.css",
+      "wwwroot/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/dist/theme-core-auth.min.css",
+    "inputFiles": [
+      "wwwroot/css/bootstrap.min.css",
+      "wwwroot/css/bootstrap-extended.css",
+      "wwwroot/css/colors.css",
+      "wwwroot/css/components.css",
+      "wwwroot/css/themes/dark-layout.css",
+      "wwwroot/css/themes/semi-dark-layout.css",
+      "wwwroot/css/core/menu/menu-types/vertical-menu.css",
+      "wwwroot/css/core/colors/palette-gradient.css",
+      "wwwroot/css/authentication.css",
+      "wwwroot/css/style.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/dist/themes-core.min.js",
+    "inputFiles": [
+      "www/js/core/app-menu.js",
+      "www/js/core/app.js",
+      "www/js/scripts/components.js",
+      "www/lib/jquery-validate/jquery.validate.js",
+      "www/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/js/dist/verification.min.js",
+    "inputFiles": [
+      "wwwroot/js/pages/verification.js"
+    ]
+  }
+]

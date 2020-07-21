@@ -1,0 +1,23 @@
+﻿
+
+<div class="card rounded-0 mb-0 px-2 py-1">
+    <div class="card-header pb-1">
+        <div class="card-title">
+            <h4 class="mb-0">Masukan kode verifikasi</h4>
+        </div>
+    </div>
+    <p class="px-2 mb-0">Kode verifikasi telah dikirimkan melalui email xxx@xxx.com</p>
+    <div class="card-content">
+        <div class="card-body">
+            <form asp-action="verify" method="post" onsubmit="verify(this)" id="verify" asp-antiforgery="true">
+                <div class="form-label-group text-center ">
+                    <input type="text" name="otp" class="input-otp form-control" maxlength="4" autocomplete="off" required>
+                </div>
+                <div class="d-block mb-1">
+                    <button type="submit" id="submit" class="btn btn-primary btn-block px-75 waves-effect waves-light">Verifikasi</button>
+                </div>
+                <p style="text-align:center;font-size:12px;">Tidak menerima kode? <br /><a href="#" onclick="reSend()">Kirim Ulang</a> atau <a asp-action="index" asp-controller="register">Daftar dengan Email</a></p>
+            </form>
+        </div>
+    </div>
+</div>

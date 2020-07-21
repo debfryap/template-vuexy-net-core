@@ -1,0 +1,38 @@
+﻿@{
+    var controllerName = ViewContext.RouteData.Values["controller"].ToString();
+}
+<div class="row breadcrumbs-top">
+    <div class="col-12">
+        <h2 class="content-header-title float-left mb-0">@controllerName</h2>
+        @if (controllerName != "dashboard")
+        {
+            <div class="breadcrumb-wrapper col-12">
+                <ol class="breadcrumb">
+                    @*<li class="breadcrumb-item">
+            <a asp-action="index" asp-controller="dashboard">Dashboard</a>
+        </li>*@
+                    <li class="breadcrumb-item">
+                        <a asp-controller="@controllerName" asp-action="index">@controllerName</a>
+                    </li>
+                    @if (ViewContext.RouteData.Values["id"] != null)
+                    {
+                        <li class="breadcrumb-item">
+                            <a asp-controller="@controllerName" asp-action="@ViewContext.RouteData.Values["action"].ToString()">@ViewContext.RouteData.Values["action"].ToString()</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            @ViewContext.RouteData.Values["id"].ToString()
+                        </li>
+                    }
+                    else
+
+                    {
+                        <li class="breadcrumb-item active">
+                            @ViewContext.RouteData.Values["action"].ToString()
+                        </li>
+                    }
+                </ol>
+            </div>
+        }
+
+    </div>
+</div>

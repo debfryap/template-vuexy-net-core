@@ -336,3 +336,5 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+PanelDashboard.Web/wwwroot/css/dist
+PanelDashboard.Web/wwwroot/js/dist

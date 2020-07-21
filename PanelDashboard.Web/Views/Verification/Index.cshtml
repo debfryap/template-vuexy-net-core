@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Verifikasi Akun";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<div class="card bg-authentication w-100 rounded-0 mb-0">
+    <div class="row m-0">
+        <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
+            <img src="~/images/pages/reset-password.png" alt="branding logo">
+        </div>
+        <div class="col-lg-6 col-12 p-0" id="verification">
+            <partial name="_Verify" />
+        </div>
+    </div>
+</div>
+@section FooterScripts{
+    <environment include="Development">
+        <script src="~/js/pages/verification.js"></script>
+    </environment>
+    <environment include="Production">
+        <script src="~/js/dist/verification.min.js"></script>
+    </environment>
+}

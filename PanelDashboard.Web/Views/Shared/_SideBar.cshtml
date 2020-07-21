@@ -1,0 +1,60 @@
+﻿<div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+    <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+            <li class="nav-item mr-auto">
+                <a class="navbar-brand">
+                    <div class="brand-logo" style="background:url(@Url.Content("~/images/logo/vuesax-logo.png")); background-position: -65px -54px;"></div>
+                    <h2 class="brand-text mb-0">Dashboard</h2>
+                </a>
+            </li>
+            <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="feather icon-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i class="toggle-icon feather icon-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary" data-ticon="icon-disc"></i></a></li>
+        </ul>
+    </div>
+    <div class="shadow-bottom"></div>
+    <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="dashboard"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
+            </li>
+            <li class=" navigation-header">
+                <span>Apps</span>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="input" asp-controller="leads"><i class="feather icon-edit"></i><span class="menu-title" data-i18n="Ecommerce">Incoming Leads</span></a>
+                <ul class="menu-content">
+                    <li>
+                        <a asp-action="input" asp-controller="leads"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Input</span></a>
+                    </li>
+                    <li>
+                        <a asp-action="upload" asp-controller="leads"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Upload</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="digitalpartner"><i class="feather icon-pie-chart"></i><span class="menu-title" data-i18n="Ecommerce">Report</span></a>
+                <ul class="menu-content">
+                    <li>
+                        <a asp-action="summary" asp-controller="digitalpartner"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Summary</span></a>
+                    </li>
+                    <li>
+                        <a asp-action="detail" asp-controller="digitalpartner"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Detail</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="digitalpartner"><i class="feather icon-upload"></i><span class="menu-title" data-i18n="Ecommerce">Update Status</span></a>
+                <ul class="menu-content">
+                    <li>
+                        <a asp-action="summary" asp-controller="digitalpartner"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Shop">Summary</span></a>
+                    </li>
+                    <li>
+                        <a asp-action="detail" asp-controller="digitalpartner"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="Wish List">Detail</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="digitalpartner"><i class="feather icon-users"></i><span class="menu-title" data-i18n="Ecommerce">Account Management</span></a>
+            </li>
+        </ul>
+    </div>
+</div>

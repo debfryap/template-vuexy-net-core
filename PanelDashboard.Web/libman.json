@@ -1,0 +1,91 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "library": "popper.js@1.15.0",
+      "destination": "wwwroot/lib/pooper/"
+    },
+    {
+      "library": "twitter-bootstrap@4.3.1",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [ "js/bootstrap.min.js", "css/bootstrap.min.css" ]
+    },
+    {
+      "library": "jquery.perfect-scrollbar@1.4.0",
+      "destination": "wwwroot/lib/perfect-scrollbar/"
+    },
+    {
+      "library": "hammer.js@2.0.8",
+      "destination": "wwwroot/lib/hammmer-js/"
+    },
+    {
+      "library": "jquery.blockUI@2.70",
+      "destination": "wwwroot/lib/jquery.blockUI/"
+    },
+    {
+      "library": "jquery.matchHeight@0.7.2",
+      "destination": "wwwroot/lib/jquery-match-height/"
+    },
+    {
+      "library": "feather-icons@4.24.1",
+      "destination": "wwwroot/lib/feather-icons/"
+    },
+    {
+      "library": "font-awesome@4.7.0",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "flag-icon-css@3.4.3",
+      "destination": "wwwroot/lib/flag-icon/"
+    },
+    {
+      "library": "pace@1.0.2",
+      "destination": "wwwroot/lib/pace/"
+    },
+    {
+      "library": "node-waves@0.7.6",
+      "destination": "wwwroot/lib/waves/"
+    },
+    {
+      "library": "animate.css@3.7.2",
+      "destination": "wwwroot/lib/animatecss/"
+    },
+    {
+      "library": "magnific-popup.js@1.1.0",
+      "destination": "wwwroot/lib/magnific-popup/"
+    },
+    {
+      "library": "summernote@0.8.12",
+      "destination": "wwwroot/lib/summernote"
+    },
+    {
+      "library": "jquery-validate@1.19.1",
+      "destination": "wwwroot/lib/jquery-validate"
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.11",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive"
+    },
+    {
+      "library": "datatables@1.10.19",
+      "destination": "wwwroot/lib/datatables"
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "wwwroot/lib/toastr"
+    },
+    {
+      "library": "bootstrap-daterangepicker@3.0.5",
+      "destination": "wwwroot/lib/daterangepicker"
+    },
+    {
+      "library": "moment.js@2.24.0",
+      "destination": "wwwroot/lib/momentjs"
+    }
+  ]
+}
