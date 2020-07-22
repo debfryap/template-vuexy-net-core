@@ -1,5 +1,6 @@
 ﻿@{
     var controllerName = ViewContext.RouteData.Values["controller"].ToString();
+    var actionName = ViewContext.RouteData.Values["action"].ToString();
 }
 <div class="row breadcrumbs-top">
     <div class="col-12">
@@ -9,22 +10,21 @@
             <div class="breadcrumb-wrapper col-12">
                 <ol class="breadcrumb">
                     @*<li class="breadcrumb-item">
-            <a asp-action="index" asp-controller="dashboard">Dashboard</a>
-        </li>*@
+                            <a asp-action="index" asp-controller="dashboard">Dashboard</a>
+                        </li>*@
                     <li class="breadcrumb-item">
                         <a asp-controller="@controllerName" asp-action="index">@controllerName</a>
                     </li>
                     @if (ViewContext.RouteData.Values["id"] != null)
                     {
                         <li class="breadcrumb-item">
-                            <a asp-controller="@controllerName" asp-action="@ViewContext.RouteData.Values["action"].ToString()">@ViewContext.RouteData.Values["action"].ToString()</a>
+                            <a asp-controller="@controllerName" asp-action="@actionName">@actionName</a>
                         </li>
                         <li class="breadcrumb-item active">
                             @ViewContext.RouteData.Values["id"].ToString()
                         </li>
                     }
-                    else
-
+                    else if(actionName != "Index")
                     {
                         <li class="breadcrumb-item active">
                             @ViewContext.RouteData.Values["action"].ToString()
