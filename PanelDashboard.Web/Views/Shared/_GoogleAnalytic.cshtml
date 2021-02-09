@@ -1,12 +1,15 @@
-﻿<environment include="Production">
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration config
+
+<environment include="Production">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=@config["AppConfig:GoogleAnalytic"]"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
-        gtag('config', '');
+        gtag('config', '@config["AppConfig:GoogleAnalytic"]');
     </script>
 </environment>
 
