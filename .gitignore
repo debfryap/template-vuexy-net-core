@@ -338,3 +338,5 @@ ASALocalRun/
 .localhistory/
 PanelDashboard.Web/wwwroot/css/dist
 PanelDashboard.Web/wwwroot/js/dist
+BfiBaseTemplate.Web/wwwroot/js/dist
+BfiBaseTemplate.Web/wwwroot/css/dist

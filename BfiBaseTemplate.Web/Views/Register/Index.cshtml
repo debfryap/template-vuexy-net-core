@@ -1,0 +1,90 @@
+﻿@model BfiBaseTemplate.Repo.Entities.Request.RegisterEntitiesRequest
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<div class="card bg-authentication rounded-0 mb-0">
+    <div class="row m-0">
+        <div class="col-lg-6 d-lg-block d-none text-center align-self-center pl-0 pr-3 py-0">
+            <img src="~/images/pages/register.jpg" alt="branding logo">
+        </div>
+        <div class="col-lg-6 col-12 p-0">
+            <div class="card rounded-0 mb-0 p-2">
+                <div class="card-header pt-50 pb-1">
+                    <div class="card-title">
+                        <h4 class="mb-0">Daftar Sekarang</h4>
+                    </div>
+                </div>
+                <p class="px-2">Bergabunglah menjadi bagian dari bisnis <br />BFI Finance.</p>
+                <div class="card-content">
+                    <div class="card-body pt-0">
+                        <form asp-controller="register" asp-action="index" method="post" asp-antiforgery="true" id="register">
+                            <div class="form-label-group">
+                                <input type="text" asp-for="PhoneNumber" class="form-control" placeholder="No Handphone" data-digits="true">
+                                <label asp-for="PhoneNumber">No Handphone</label>
+                                <span asp-validation-for="PhoneNumber" class="danger"></span>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="text" asp-for="PartnerName" class="form-control" placeholder="Nama Partner">
+                                <label asp-for="PartnerName">Nama Partner</label>
+                                <span asp-validation-for="PartnerName" class="danger"></span>
+                            </div>
+                            <div class="form-label-group">
+                                <input type="email" asp-for="Email" class="form-control" placeholder="Email">
+                                <label asp-for="Email">Email</label>
+                                <span asp-validation-for="Email" class="danger"></span>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <fieldset class="checkbox" style="display:inline-block; vertical-align:middle;">
+                                        <div class="vs-checkbox-con vs-checkbox-primary">
+                                            <input type="checkbox" onchange="agree(this)">
+                                            <span class="vs-checkbox">
+                                                <span class="vs-checkbox--check">
+                                                    <i class="vs-icon feather icon-check"></i>
+                                                </span>
+                                            </span>
+                                            <span class=""></span>
+                                        </div>
+                                    </fieldset>
+                                    Saya menyetujui  <a href="#" data-toggle="modal" data-target="#info">Syarat &amp; Ketentuan</a>
+                                </div>
+                            </div>
+                            <a asp-controller="auth" asp-action="login" class="btn btn-outline-primary float-left btn-inline mb-50 waves-effect waves-light">Login</a>
+                            <button type="submit" id="submit" class="btn btn-primary float-right btn-inline mb-50 waves-effect waves-light" disabled>
+                                Daftar Sekarang
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade text-left" id="info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel130">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary white">
+                <h5 class="modal-title" id="myModalLabel130">Syarat &amp; Ketentuan</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Tart lemon drops macaroon oat cake chocolate toffee chocolate bar icing. Pudding jelly beans
+                carrot cake pastry gummies cheesecake lollipop. I love cookie lollipop cake I love sweet
+                gummi
+                bears cupcake dessert.
+            </div>
+        </div>
+    </div>
+</div>
+@section FooterScripts{
+    <script>
+        function agree(dom) {
+            $('#submit').prop("disabled", !$(dom).is(':checked'))
+        }
+    </script>
+}

@@ -1,0 +1,53 @@
+.note-editor {
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+
+.note-editing-area {
+    padding: 15px;
+}
+
+.note-popover .popover-content, .panel-heading.note-toolbar {
+    background: #f1f1f1;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn-group-vertical > .btn, .btn-group > .btn {
+    font-size: 13px;
+    padding: 10px 7px;
+}
+
+    .btn-group-vertical > .btn.active, .btn-group-vertical > .btn:active, .btn-group-vertical > .btn:focus, .btn-group-vertical > .btn:hover, .btn-group > .btn.active, .btn-group > .btn:active, .btn-group > .btn:focus, .btn-group > .btn:hover {
+        background: #d6d6d6;
+    }
+
+kbd {
+    background: #3677B2;
+}
+
+.modal .modal-header .close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.field-validation-error {
+    font-size: 11px;
+}
+
+.error {
+    color: #ff6666 !important;
+    font-size: 11px;
+}
+
+.input-otp {
+    text-align: center;
+    text-indent: 15px;
+    letter-spacing: 15px;
+    font-weight: 700;
+}
