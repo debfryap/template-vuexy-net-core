@@ -201,3 +201,111 @@
     </div>
 </section>
 
+<div class="card">
+    <div class="card-header">
+        <h4 id="modal" class="card-title">Modal</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li>
+                    <a data-action="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <p>
+                Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart
+                defaults.<br>Read the official
+                <a href="https://getbootstrap.com/docs/4.5/components/modal/" target="_blank">Bootstrap Documentation</a>
+                for a full list of instructions and other options.
+            </p>
+            <h6>Example Code:</h6>
+            <pre><code class="language-html">
+&lt;div class="modal fade"&gt;
+    &lt;div class="modal-dialog" role="document"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h4 class="modal-title"&gt;Modal title&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;
+                    &lt;span aria-hidden="true"&gt;×&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                    Modal Content
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-primary" data-dismiss="modal"&gt;Save changes&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <div class="table-responsive mt-1">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Modal options</th>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Contextual Modals</strong></td>
+                            <td><code>.modal-{color}</code></td>
+                            <td>
+                                <p class="mb-0">
+                                    Use this class along with <code>.modal</code> class for contextual modal header, close button and
+                                    button in modal footer.
+                                </p>
+                                <p class="mb-0">color: {primary | secondary | success | danger | warning | info | dark}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modal sizes</strong></td>
+                            <td><code>.modal-{size]</code></td>
+                            <td>
+                                <p class="mb-0">
+                                    Use this class along with <code>.modal-dialog</code> for create modal with different sizes.
+                                </p>
+                                <p class="mb-0">size: {xs | sm | lg | xl}</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-1"><strong>Referrals :</strong></p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bootstrap Modal</strong></td>
+                            <td>
+                                <a href="https://getbootstrap.com/docs/4.5/components/modal/" target="_blank">https://getbootstrap.com/docs/4.5/components/modal/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template Page</strong></td>
+                            <td>
+                                <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-modals.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-modals.html</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section HeaderScripts{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+}
+@section FooterScripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
+}

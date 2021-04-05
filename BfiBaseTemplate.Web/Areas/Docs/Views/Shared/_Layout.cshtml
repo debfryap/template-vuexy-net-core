@@ -30,12 +30,7 @@
             var base_url = '@config["AppConfig:BaseUrl"]';
     </script>
     @RenderSection("HeaderScripts", required: false)
-    @{
-        if (UserInfo.Indentity(User).IsDemo)
-        {
-            Context.Response.Redirect(config["AppConfig:BaseUrl"] + "/demo");
-        }
-    }
+   
 </head>
 <body class="vertical-layout vertical-menu-modern 2-columns ecommerce-application navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
     <!-- BEGIN: Main Menu-->

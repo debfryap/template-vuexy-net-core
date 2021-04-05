@@ -46,6 +46,9 @@
                     <li>
                         <a asp-action="datepicker" asp-controller="form"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Upload">Datepicker</span></a>
                     </li>
+                    <li>
+                        <a asp-action="upload" asp-controller="form"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Upload">Upload</span></a>
+                    </li>
                 </ul>
             </li>
             <li class=" nav-item">
@@ -67,6 +70,23 @@
                         <a asp-action="datatables" asp-controller="table"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Upload">Datatables</span></a>
                     </li>
                 </ul>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="error"><i class="feather icon-server"></i><span class="menu-title" data-i18n="Ecommerce">Error Page</span></a>
+                <ul class="menu-content">
+                    <li>
+                        <a asp-action="notfound" asp-controller="error" asp-area="docs"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Input">Not Found</span></a>
+                    </li>
+                    <li>
+                        <a asp-action="notauthorize" asp-controller="error"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Upload">Not Authorize</span></a>
+                    </li>
+                    <li>
+                        <a asp-action="underconstruction" asp-controller="error"><i class="feather icon-circle"></i><span class="menu-item" data-i18n="InputLeads-Upload">Under Construction</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class=" nav-item">
+                <a asp-action="index" asp-controller="email"><i class="feather icon-mail"></i><span class="menu-title" data-i18n="Ecommerce">Email Template</span></a>
             </li>
         </ul>
     </div>

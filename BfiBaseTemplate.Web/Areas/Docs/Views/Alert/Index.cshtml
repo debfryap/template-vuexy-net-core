@@ -1,7 +1,7 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Docs/Views/Shared/_Layout.cshtml";
 }
 
 <section id="alerts-with-icons">
@@ -39,16 +39,15 @@
                             </span>
                         </div>
 
-                        <code>
-                            <pre>
-                            &lt;div class="alert alert-danger" role="alert"&gt;
-                            &lt;i class="feather icon-star mr-1 align-middle"&gt;&lt;/i&gt;
-                            &lt;span&gt;
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    &lt;/span&gt;
-                                &lt;/div&gt;
-</pre>
-                        </code>
+<pre><code class="language-html">
+&lt;div class="alert alert-danger" role="alert"&gt;
+        &lt;i class="feather icon-star mr-1 align-middle"&gt;&lt;/i&gt;
+    &lt;span&gt;
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    &lt;/span&gt;
+&lt;/div&gt;
+
+</code></pre>
                     </div>
                 </div>
             </div>
@@ -56,3 +55,9 @@
     </div>
 </section>
 
+@section HeaderScripts{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+}
+@section FooterScripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
+}
