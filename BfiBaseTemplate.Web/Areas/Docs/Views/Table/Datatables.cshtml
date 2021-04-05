@@ -115,7 +115,7 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body card-dashboard">
-                        <p class="card-text">DataTables has most features enabled by default, so all you need to do to use it with your own ables is to call the construction function: $().DataTable();.</p>
+                        <p class="card-text">DataTables has most features enabled by default, so all you need to do to use it with your own ables is to call the construction function: <code class="language-javascript">$().DataTable();</code>.</p>
                         <div class="table-responsive">
                             <table class="table zero-configuration">
                                 <thead>
@@ -499,6 +499,39 @@
                                 </tfoot>
                             </table>
                         </div>
+                        <pre class="language-javascript"><code class="language-javascript">$('.row-grouping').DataTable({
+    . . .
+    "drawCallback": function(settings) {
+        var api = this.api();
+        var rows = api.rows({
+            page: 'current'
+        }).nodes();
+        var last = null;
+
+        api.column(2, {
+            page: 'current'
+        }).data().each(function(group, i) {
+            if (last !== group) {
+                $(rows).eq(i).before(
+                    '&lt;tr class="group"&gt;&lt;td colspan="5"&gt;' + group + '&lt;/td&gt;&lt;/tr&gt;'
+                );
+
+                last = group;
+            }
+        });
+    }
+    . . .
+});
+                             
+$('.row-grouping tbody').on('click', 'tr.group', function() {
+    var currentOrder = groupingTable.order()[0];
+    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+        groupingTable.order([2, 'desc']).draw();
+    }
+    else {
+        groupingTable.order([2, 'asc']).draw();
+    }
+});</code></pre>
                     </div>
                 </div>
             </div>
@@ -1054,6 +1087,20 @@
                                     </tr>
                                 </tfoot>
                             </table>
+                            <pre class="language-javascript"><code class="language-javascript">var t = $('.add-rows').DataTable();
+var counter = 2;
+
+$('#addRow').on( 'click', function () {
+    t.row.add( [
+        counter +'.1',
+        counter +'.2',
+        counter +'.3',
+        counter +'.4',
+        counter +'.5'
+    ] ).draw( false );
+
+    counter++;
+});</code></pre>
                         </div>
                     </div>
                 </div>
@@ -1320,6 +1367,40 @@
                                     </tr>
                                 </tfoot>
                             </table>
+                            <pre class="language-javascript"><code class="language-javascript">$('.dataex-html5-selectors').DataTable( {
+    dom: 'Bfrtip',
+    buttons: [
+        {
+            extend: 'copyHtml5',
+            exportOptions: {
+                columns: [ 0, ':visible' ]
+            }
+        },
+        {
+            extend: 'pdfHtml5',
+            exportOptions: {
+                columns: ':visible'
+            }
+        },
+        {
+            text: 'JSON',
+            action: function ( e, dt, button, config ) {
+                var data = dt.buttons.exportData();
+
+                $.fn.dataTable.fileSave(
+                    new Blob( [ JSON.stringify( data ) ] ),
+                    'Export.json'
+                );
+            }
+        },
+        {
+            extend: 'print',
+            exportOptions: {
+                columns: ':visible'
+            }
+        }
+    ]
+});</code></pre>
                         </div>
                     </div>
                 </div>
@@ -1907,6 +1988,10 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <pre class="language-javascript"><code class="language-javascript">$('.scroll-horizontal-vertical').DataTable( {
+    "scrollY": 200,
+    "scrollX": true
+});</code></pre>
                         </div>
                     </div>
                 </div>
