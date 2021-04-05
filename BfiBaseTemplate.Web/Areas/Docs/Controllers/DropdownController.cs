@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BfiBaseTemplate.Web.Areas.Docs.Controllers
 {
+    [Area("docs")]
     public class DropdownController : Controller
     {
         public IActionResult Index()
