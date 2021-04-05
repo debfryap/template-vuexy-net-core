@@ -3656,9 +3656,9 @@ input[type='date'].form-control, input[type='time'].form-control, input[type='da
   min-height : 40px !important;
 }
 
-.select2-container {
+/*.select2-container {
   width : 100% !important;
-}
+}*/
 
 .select2-container--classic:focus, .select2-container--default:focus {
   outline : none;

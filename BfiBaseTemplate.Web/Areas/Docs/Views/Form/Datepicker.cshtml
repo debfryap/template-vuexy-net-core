@@ -1,0 +1,284 @@
+﻿
+@{
+    ViewData["Title"] = "Datepicker";
+    Layout = "~/Areas/Docs/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h4 id="date-time-picker" class="card-title">Flatpickr</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li>
+                    <a data-action="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content" aria-expanded="true">
+        <div class="card-body">
+            <p>
+                Flatpickr is a lightweight and powerful datetime picker.<br>Read the official
+                <a href="https://flatpickr.js.org/" target="_blank">Flatpickr Documentation</a> for a full list of
+                instructions and other options.
+            </p>
+            <h6>1. Initialize the plugin by referencing the necessary files:</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">Markup</div></div><pre class=" my-1 language-markup"><code class=" language-markup"><span class="token comment" spellcheck="true">&lt;!-- Vendor files --&gt;</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flatpickr.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flatpickr.min.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token comment" spellcheck="true">&lt;!-- Template files --&gt;</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app-assets/css/plugins/forms/pickers/form-flat-pickr.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+            <h6>2. Binding to existing DOM element.</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">Markup</div></div><pre class=" my-1 language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>basic-flatpickr<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+            <h6>3. Basic usage looks something like this:</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">JavaScript</div></div><pre class=" my-1 language-javascript"><code class=" language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#basic-flatpickr'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">flatpickr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p class="mt-2">
+                <strong>
+                    Refer following links for detailed documentation, configuration options, methods and
+                    examples:
+                </strong>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Flatpickr Plugin Link</strong></td>
+                            <td>
+                                <a href="https://flatpickr.js.org/" target="_blank">https://flatpickr.js.org/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flatpickr Github Link</strong></td>
+                            <td>
+                                <a href="https://github.com/flatpickr/flatpickr" target="_blank">https://github.com/flatpickr/flatpickr</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template Page</strong></td>
+                            <td>
+                                <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/form-date-time-picker.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/form-date-time-picker.html</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <h4 id="date-time-picker" class="card-title">Pickadate</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li>
+                    <a data-action="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content" aria-expanded="true">
+        <div class="card-body">
+            <p>
+                Pickadate is mobile-friendly, responsive, and lightweight jQuery date &amp; time input picker.<br>Read
+                the official
+                <a href="https://amsul.ca/pickadate.js/" target="_blank">Pickadate Documentation</a> for a full list
+                of instructions and other options.
+            </p>
+            <h6>1. Initialize the plugin by referencing the necessary files:</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">Markup</div></div><pre class=" my-1 language-markup"><code class=" language-markup"><span class="token comment" spellcheck="true">&lt;!-- Vendor files --&gt;</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>picker.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>picker.date.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>picker.time.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>pickadate.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
+</span><span class="token lf">
+</span><span class="token comment" spellcheck="true">&lt;!-- Template files --&gt;</span><span class="token lf">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app-assets/css/plugins/forms/pickers/form-pickadate.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+            <h6>2. Binding to existing DOM element.</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">Markup</div></div><pre class=" my-1 language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>basic-pickadate<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></code></pre>
+            <h6>3. Basic usage looks something like this:</h6>
+            <div class="prism-show-language"><div class="prism-show-language-label">JavaScript</div></div><pre class=" my-1 language-javascript"><code class=" language-javascript"><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">'#basic-pickadate'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pickadate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p class="mt-2">
+                <strong>
+                    Refer following links for detailed documentation, configuration options, methods and
+                    examples:
+                </strong>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pickadate Plugin Link</strong></td>
+                            <td>
+                                <a href="https://amsul.ca/pickadate.js/" target="_blank">https://amsul.ca/pickadate.js/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pickadate Github Link</strong></td>
+                            <td>
+                                <a href="https://github.com/amsul/pickadate.js" target="_blank">https://github.com/amsul/pickadate.js</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template Page</strong></td>
+                            <td>
+                                <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/form-date-time-picker.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/form-date-time-picker.html</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pick-A-Date Picker start -->
+<section id="pick-a-date">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Date Picker</h4>
+                    <p class="mb-2">The basic setup requires targetting an <code>input</code> element and invoking the picker.</p>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Default</h5>
+                    <p>Use <code>.pickadate</code> class for basic Pick-A-Date Picker.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Format Date Picker</h5>
+                    <p>Set<code>format</code> attribute for basic change format of date.</p>
+                    <form>
+                        <input type='text' class="form-control format-picker" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Min-Max Date Range</h5>
+                    <p>Use <code>.pickadate-limits</code> class for min. and max. date range.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-limits" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Translation</h5>
+                    <p>Use <code>.pickadate-translations</code> class for language translation.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-translations" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Pick-a-date with short string</h5>
+                    <p>Use <code>.pickadate-short-string</code> class for short Month & Week String.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-short-string" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Change First Weekday</h5>
+                    <p>Use <code>.pickadate-firstday</code> class to change first weekday to Monday.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-firstday" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Select Month & Year</h5>
+                    <p>Use <code>.pickadate-months-year</code> class for display select menus to pick the month & year.</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-months-year" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Disabled Dates & Weeks</h5>
+                    <p>Use <code>.pickadate-disable</code> class for disabled dates or weeks. (such as all Sun.1th day of week and 1st and 3rd Sat.).</p>
+                    <form>
+                        <input type='text' class="form-control pickadate-disable" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pick-A-Date Picker end -->
+<!-- Pick-A-Time Picker start -->
+<section id="pick-a-time">
+    <div class="card">
+        <div class="card-body">
+            <div class="row match-height">
+                <div class="col-12">
+                    <h4 class="mb-1">Time Picker</h4>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Default</h5>
+                    <p>Use <code>.pickatime</code> class for basic Pick-a-Time Picker.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Change Formats</h5>
+                    <p>Use <code>.pickatime-format</code> class to change time display formats.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime-format" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Format with Label</h5>
+                    <p>Use <code>.pickatime-formatlabel</code> class to display time label format.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime-formatlabel" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Intervals</h5>
+                    <p>Use <code>.pickatime-intervals</code> class to display time in Intervals.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime-intervals" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Disable set of Time</h5>
+                    <p>Use <code>.pickatime-disable</code> class to disable time hours.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime-disable" />
+                    </form>
+                </div>
+                <div class="col-md-6 col-12 mb-1">
+                    <h5 class="text-bold-500">Minimum and maximum time range</h5>
+                    <p>Use <code>.pickatime-min-max</code> class for Start Time & End Time.</p>
+                    <form>
+                        <input type='text' class="form-control pickatime-min-max" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Pick-A-Time Picker end -->
+
+@section HeaderScripts{
+    <link rel="stylesheet" href="~/lib/pickadate/themes/classic.css" />
+    <link rel="stylesheet" href="~/lib/pickadate/themes/classic.date.css" />
+    <link rel="stylesheet" href="~/lib/pickadate/themes/classic.time.css" />
+}
+@section FooterScripts{
+    <script src="~/lib/pickadate/picker.js"></script>
+    <script src="~/lib/pickadate/picker.date.js"></script>
+    <script src="~/lib/pickadate/picker.time.js"></script>
+    <script src="~/lib/pickadate/legacy.js"></script>
+    <script src="~/js/pages/pick-a-datetime.js"></script>
+}

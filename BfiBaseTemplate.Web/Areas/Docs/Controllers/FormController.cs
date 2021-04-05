@@ -17,5 +17,21 @@ namespace BfiBaseTemplate.Web.Areas.Docs.Controllers
         {
             return View();
         }
+        public IActionResult Select()
+        {
+            return View();
+        }
+        public IActionResult Radio()
+        {
+            return View();
+        }
+        public IActionResult Datepicker()
+        {
+            return View();
+        }
+        public IActionResult Upload()
+        {
+            return View();
+        }
     }
 }

@@ -10,6 +10,7 @@
       "wwwroot/css/themes/semi-dark-layout.css",
       "wwwroot/css/core/menu/menu-types/vertical-menu.css",
       "wwwroot/css/core/colors/palette-gradient.css",
+      "wwwroot/lib/prism/themes/prism.min.css",
       "wwwroot/css/style.css"
     ]
   },
@@ -35,7 +36,8 @@
       "wwwroot/js/core/app.js",
       "wwwroot/js/scripts/components.js",
       "wwwroot/lib/jquery-validate/jquery.validate.js",
-      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "wwwroot/lib/prism/prism.min.js"
     ]
   },
   {
