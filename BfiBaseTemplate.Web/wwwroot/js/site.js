@@ -1,11 +1,9 @@
 ﻿
 function toggleSideMenu() {
     if (localStorage.getItem("menu_collapse") === 'true') {
-        console.log('collapse');
         $('body').addClass('menu-collapsed');
         $('body').removeClass('menu-expanded');
     } else {
-        console.log('expand');
         $('body').addClass('menu-expanded');
         $('body').removeClass('menu-collapsed');
     }

@@ -32,7 +32,7 @@
     "BaseUrl": "https://localhost:44388",
     "GoogleAnalytic": "UA-XXXXXXXXX-X",
     "reCAPTCHA": "UA-XXXXXXXXX-X"
-  },
+},
 ```
 4. Folder `Docs` tidak masuk kedalam project, jadi lebih baik folder tersebut **dihapus dan tidak masuk kedalam git**.
 5. Setiap halaman yang memiliki lebih dari 1 file js harus dibundle seperti contoh dibawah ini :
@@ -58,7 +58,7 @@ kemudian update file `bundleconfig.json` seperti dibawah ini :
       "wwwroot/js/pages/file-javascript-2.js",
       "wwwroot/js/pages/file-javascript-3.js",
     ]
-  },
+},
 ```
 6. Untuk penambahan library **javascript** ataupun **css** harus melalui file `libman.json`
 ---
@@ -66,6 +66,7 @@ kemudian update file `bundleconfig.json` seperti dibawah ini :
 1. Copy ke `inetpub\wwwroot\folder_app` folder app bisa disesuaikan dengan nama aplikasinya
 2. Buka IIS Manager kemudian klik kanan pada folder application pilih Convert to Aplication, pada pilihan selanjutnya pilih no manage code.
 ---
+
 ## Documentation
 
 untuk dokumentasi silahkan klik [disini](http://rnd2.bfi.co.id/bfi-theme)

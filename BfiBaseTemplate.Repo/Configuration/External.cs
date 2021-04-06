@@ -30,6 +30,7 @@ namespace BfiBaseTemplate.Repo.Configuration
             }
             return Path;
         }
+
         public static readonly ConfigurationModel ConfigItem = Config();
     }
 }
