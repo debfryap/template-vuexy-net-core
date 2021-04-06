@@ -11,6 +11,22 @@ namespace BfiBaseTemplate.Web.Areas.Docs.Controllers
     {
         public IActionResult Index()
         {
+            return RedirectToAction(nameof(Bordered));
+        }
+        public IActionResult Bordered()
+        {
+            return View();
+        }
+        public IActionResult Animation()
+        {
+            return View();
+        }
+        public IActionResult Striped()
+        {
+            return View();
+        }
+        public IActionResult Datatables()
+        {
             return View();
         }
     }

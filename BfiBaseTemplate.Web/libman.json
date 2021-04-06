@@ -87,5 +87,21 @@
       "library": "moment.js@2.24.0",
       "destination": "wwwroot/lib/momentjs"
     },
+    {
+      "library": "prism@1.23.0",
+      "destination": "wwwroot/lib/prism"
+    },
+    {
+      "library": "select2@4.0.13",
+      "destination": "wwwroot/lib/select2"
+    },
+    {
+      "library": "pickadate.js@3.6.4",
+      "destination": "wwwroot/lib/pickadate"
+    },
+    {
+      "library": "dropzone@5.9.2",
+      "destination": "wwwroot/lib/dropzone"
+    }
   ]
 }
