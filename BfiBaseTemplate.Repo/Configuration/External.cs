@@ -9,7 +9,10 @@ namespace BfiBaseTemplate.Repo.Configuration
     public class External
     {
         private const string URL_CONFIGURATION = @"\app-name\config.json";
-        public static ConfigurationModel Read()
+        protected External()
+        {
+        }
+        private static ConfigurationModel Config()
         {
             string HOME_DIRECTORY = RuntimeInformation.IsOSPlatform(OSPlatform.Windows) ? Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) : Environment.GetEnvironmentVariable("HOME");
             string URL_CONFIG = Path(HOME_DIRECTORY + URL_CONFIGURATION);
@@ -27,5 +30,6 @@ namespace BfiBaseTemplate.Repo.Configuration
             }
             return Path;
         }
+        public static readonly ConfigurationModel ConfigItem = Config();
     }
 }

@@ -13,7 +13,7 @@ namespace BfiBaseTemplate.Repo.Proxy
 {
     public class BaseProxy
     {
-        private readonly string CREDENTIAL_FILE_PATH = External.Read().CredentialFilePath;
+        private readonly string CREDENTIAL_FILE_PATH = External.ConfigItem.CredentialFilePath;
         public readonly NLog.Logger _logger = LogManager.GetCurrentClassLogger();
         public BaseProxy()
         {
@@ -75,9 +75,9 @@ namespace BfiBaseTemplate.Repo.Proxy
         }
         protected OauthTokenCredential RequestToken()
         {
-            string plainBasicAuth = External.Read().OauthApi.ApiKeyName + ":" + External.Read().OauthApi.ApiKeyValue;
+            string plainBasicAuth = External.ConfigItem.OauthApi.ApiKeyName + ":" + External.ConfigItem.OauthApi.ApiKeyValue;
             string base64BasicAuth = Convert.ToBase64String(Encoding.UTF8.GetBytes(plainBasicAuth));
-            var client = new RestClient(External.Read().OauthApi.Url);
+            var client = new RestClient(External.ConfigItem.OauthApi.Url);
             client.Timeout = -1;
             var request = new RestRequest("client_credentials/token?grant_type=client_credentials", Method.POST);
             request.AddHeader("Authorization", "Basic " + base64BasicAuth);

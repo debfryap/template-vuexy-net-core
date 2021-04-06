@@ -1,12 +1,12 @@
 # Base Template UI
 ## Configuration
 
-1. Buat file `config.json` pada directory `C:\Users\[LoginName]\application-name`, kemudian copy code configurasi dibawah ini 
+1. Buat file `config.json` pada directory `C:\Users\[LoginName]\[application-name]`, kemudian copy code configurasi dibawah ini 
 ```
 {
   "CredentialFilePath" : "\\application-name\\token.json",
   "OauthApi" : {
-    "Url" : "https://servername-gc.bfi.co.id/oauth/",
+    "Url" : "https://servername.bfi.co.id/oauth/",
     "ApiKeyName":"xxx",
     "ApiKeyValue":"xxx"
   },
@@ -33,10 +33,8 @@
     "GoogleAnalytic": "UA-XXXXXXXXX-X",
     "reCAPTCHA": "UA-XXXXXXXXX-X"
   },
-
 ```
-4. Folder `Docs` tidak masuk kedalam project, jadi lebih baik folder tersebut dihapus dan tidak masuk kedalam git.
-
+4. Folder `Docs` tidak masuk kedalam project, jadi lebih baik folder tersebut **dihapus dan tidak masuk kedalam git**.
 5. Setiap halaman yang memiliki lebih dari 1 file js harus dibundle seperti contoh dibawah ini :
 
 ```
