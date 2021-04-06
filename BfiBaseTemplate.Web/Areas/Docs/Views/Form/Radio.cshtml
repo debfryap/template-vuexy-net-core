@@ -4,112 +4,6 @@
     Layout = "~/Areas/Docs/Views/Shared/_Layout.cshtml";
 }
 
-<!-- Basic Radio Button start -->
-<section class="basic-radio">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Basic Radio Buttons</h4>
-                </div>
-                <div class="card-content">
-                    <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="radio" name="radio" checked>
-                                        Active
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="radio" name="radio">
-                                        Inactive
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="radio" disabled checked>
-                                        Active - disabled
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block">
-                                <fieldset>
-                                    <label>
-                                        <input type="radio" disabled>
-                                        Inactive - disabled
-                                    </label>
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Basic Radio Button end -->
-<!-- Custom Radio Buttons start -->
-<section class="custom-radio">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Custom Radio Buttons</h4>
-                </div>
-                <div class="card-content">
-                    <div class="card-body">
-                        <p>
-                            Add <code>.custom-control .custom-radio</code> as a single wrapper &amp; add
-                            <code>.custom-control-label</code> for better output.
-                        </p>
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" name="customRadio" id="customRadio1" checked>
-                                        <label class="custom-control-label" for="customRadio1">Active</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" name="customRadio" id="customRadio2">
-                                        <label class="custom-control-label" for="customRadio2">Inactive</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" checked id="customRadio3" disabled>
-                                        <label class="custom-control-label" for="customRadio3">Active - disabled</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block">
-                                <fieldset>
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="customRadio4" disabled>
-                                        <label class="custom-control-label" for="customRadio4">Inactive - disabled</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Custom Radio Buttons end -->
 <!-- Vuexy Radio Buttons start -->
 <section class="vuexy-radio">
     <div class="row">
@@ -171,6 +65,19 @@
                                 </fieldset>
                             </li>
                         </ul>
+                        <h6>Example Code:</h6>
+                        <pre><code class="language-html">
+&lt;fieldset&gt;
+    &lt;div class="vs-radio-con"&gt;
+    &lt;input type="radio" name="vueradio" checked value="false"&gt;
+        &lt;span class="vs-radio"&gt;
+            &lt;span class="vs-radio--border"&gt;&lt;/span&gt;
+            &lt;span class="vs-radio--circle"&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;span class=""&gt;Active&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;
+</code></pre>
                     </div>
                 </div>
             </div>
@@ -407,113 +314,7 @@
     </div>
 </div>
 
-<!-- Basic Checkbox start -->
-<section class="basic-checkbox">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Basic Checkboxes</h4>
-                </div>
-                <div class="card-content">
-                    <div class="card-body">
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="checkbox" value="" checked>
-                                        Active
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="checkbox" value="">
-                                        Inactive
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <label>
-                                        <input type="checkbox" value="" disabled checked>
-                                        Active - disabled
-                                    </label>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block">
-                                <fieldset>
-                                    <label>
-                                        <input type="checkbox" value="" disabled>
-                                        Inactive - disabled
-                                    </label>
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Basic Checkbox end -->
-<!-- Custom Checkbox start -->
-<section class="custom-checkbox">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-header">
-                    <h4 class="card-title">Custom Checkboxes</h4>
-                </div>
-                <div class="card-content">
-                    <div class="card-body">
-                        <p>
-                            Add <code>.custom-control .custom-checkbox</code> as a single wrapper &amp; add
-                            <code>.custom-control-label</code> for better output.
-                        </p>
-                        <ul class="list-unstyled mb-0">
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked name="customCheck" id="customCheck1">
-                                        <label class="custom-control-label" for="customCheck1">Active</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck" id="customCheck2">
-                                        <label class="custom-control-label" for="customCheck2">Inactive</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                            <li class="d-inline-block mr-2">
-                                <fieldset>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" checked name="customCheck" id="customCheck3" disabled>
-                                        <label class="custom-control-label" for="customCheck3">Active - disabled</label>
-                                    </div>
-                                </fieldset>
 
-                            </li>
-                            <li class="d-inline-block">
-                                <fieldset>
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" name="customCheck" disabled id="customCheck4">
-                                        <label class="custom-control-label" for="customCheck4">Inactive - disabled</label>
-                                    </div>
-                                </fieldset>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Custom Checkbox end -->
 <!-- Vuexy Checkbox start -->
 <section class="vuexy-checkbox">
     <div class="row">
@@ -664,6 +465,20 @@
                                 </fieldset>
                             </li>
                         </ul>
+                        <h6>Example Code:</h6>
+                        <pre><code class="language-html">
+&lt;fieldset&gt;
+    &lt;div class="vs-checkbox-con vs-checkbox-primary"&gt;
+        &lt;input type="checkbox" checked value="false"&gt;
+            &lt;span class="vs-checkbox"&gt;
+                &lt;span class="vs-checkbox--check"&gt;
+                    &lt;i class="vs-icon feather icon-check"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;span class=""&gt;Primary&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/fieldset&gt;
+</code></pre>
                     </div>
                 </div>
             </div>
@@ -907,3 +722,10 @@
         </div>
     </div>
 </div>
+@section HeaderScripts{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+}
+
+@section FooterScripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
+}
