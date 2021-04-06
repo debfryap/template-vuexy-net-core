@@ -35,7 +35,8 @@
       "wwwroot/js/core/app.js",
       "wwwroot/js/scripts/components.js",
       "wwwroot/lib/jquery-validate/jquery.validate.js",
-      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+      "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "wwwroot/js/site.js"
     ]
   },
   {

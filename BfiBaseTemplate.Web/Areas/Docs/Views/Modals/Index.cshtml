@@ -201,6 +201,7 @@
     </div>
 </section>
 
+
 <div class="card">
     <div class="card-header">
         <h4 id="modal" class="card-title">Modal</h4>
@@ -303,9 +304,54 @@
         </div>
     </div>
 </div>
+<section id="modal-themes">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Modal Themes Ajax</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <p class="mb-1">
+                            Use class <code>.bg-*</code> with your <code>.modal-header</code> to change theme of modal
+                        </p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="modal-primary mr-1 mb-1 d-inline-block">
+                                    <!-- Button trigger modal -->
+                                    <a class="btn btn-outline-primary waves-effect waves-light ajaxpopup" asp-action="example">
+                                        Primary
+                                    </a>
+
+                                </div>
+                                <div class="modal-success mr-1 mb-1 d-inline-block">
+                                    <!-- Button trigger modal -->
+                                    <a class="btn btn-outline-success waves-effect waves-light ajaxpopup" asp-action="examplesuccess">
+                                        Success
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @section HeaderScripts{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+    <link href="~/lib/magnific-popup/magnific-popup.min.css" rel="stylesheet" />
 }
 @section FooterScripts{
+
+    <script src="~/lib/magnific-popup/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
+    <script>
+        $('.ajaxpopup').magnificPopup({
+            type: 'ajax',
+            showCloseBtn: false
+        });
+    </script>
 }
