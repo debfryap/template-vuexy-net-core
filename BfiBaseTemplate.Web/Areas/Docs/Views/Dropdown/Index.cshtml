@@ -1,0 +1,221 @@
+﻿
+@{
+    ViewData["Title"] = "Dropdown";
+    Layout = "~/Areas/Docs/Views/Shared/_Layout.cshtml";
+}
+
+<section id="basic-dropdown">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Basic</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Primary
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-success dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Success
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-info dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Info
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-danger dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Danger
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-warning dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Warning
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Light
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group mb-1">
+                            <div class="dropdown">
+                                <button class="btn btn-dark dropdown-toggle mr-1 waves-effect waves-light" type="button" id="dropdownMenuButton7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dark
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+                                    <a class="dropdown-item" href="#">Option 1</a>
+                                    <a class="dropdown-item" href="#">Option 2</a>
+                                    <a class="dropdown-item" href="#">Option 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="card">
+    <div class="card-header">
+        <h4 id="dropdown" class="card-title">Dropdown</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li>
+                    <a data-action="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <p>
+                Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive
+                with the included Bootstrap dropdown JavaScript plugin.<br>Read the official
+                <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank">Bootstrap Documentation</a>
+                for a full list of instructions and other options.
+            </p>
+            <h6>Example Code:</h6>
+            <pre><code class="language-html">
+&lt;div class="dropdown"&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+        Dropdown button
+    &lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Action&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Another action&lt;/a&gt;
+        &lt;a class="dropdown-item" href="#"&gt;Something else here&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            <div class="table-responsive mt-1">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Dropdown Options</th>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Directions</strong></td>
+                            <td><code>.drop{direction}</code></td>
+                            <td>
+                                <p class="mb-0">
+                                    Use this class along with <code>.btn-group</code> to position your dropdown menu relative to the
+                                    dropdown button.
+                                </p>
+                                <p class="mb-0">direction: {up | right | left}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Active item in Dropdown Menu</strong></td>
+                            <td><code>.active</code></td>
+                            <td>Use this class along with <code>.dropdown-item</code> to show any active item in dropdown menu.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Disabled item in Dropdown Menu</strong></td>
+                            <td><code>.disabled</code></td>
+                            <td>Use this class along with <code>.dropdown-item</code> to show any disabled item in dropdown menu.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Right Aligned Dropdown Menu</strong></td>
+                            <td><code>.dropdown-menu-right</code></td>
+                            <td>Use this class to align the dropdown menu to the right side.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Header in Dropdown Menu</strong></td>
+                            <td><code>.dropdown-header</code></td>
+                            <td>Use this class to add a header inside the dropdown menu.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Divider in Dropdown Menu</strong></td>
+                            <td><code>.dropdown-divider</code></td>
+                            <td>Use this class to add a divider inside the dropdown menu.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-1"><strong>Referrals :</strong></p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bootstrap Page</strong></td>
+                            <td>
+                                <a href="https://getbootstrap.com/docs/4.5/components/dropdowns/" target="_blank">https://getbootstrap.com/docs/4.5/components/dropdowns/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template Page</strong></td>
+                            <td>
+                                <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-dropdowns.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-dropdowns.html</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section HeaderScripts{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+}
+@section FooterScripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
+}

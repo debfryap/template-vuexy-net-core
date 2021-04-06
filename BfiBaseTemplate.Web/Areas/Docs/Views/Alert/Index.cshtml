@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Alert";
     Layout = "~/Areas/Docs/Views/Shared/_Layout.cshtml";
 }
 
@@ -54,7 +54,96 @@
         </div>
     </div>
 </section>
-
+<div class="card">
+    <div class="card-header">
+        <h4 id="alert" class="card-title">Alert</h4>
+        <div class="heading-elements">
+            <ul class="list-inline mb-0">
+                <li>
+                    <a data-action="collapse"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-content collapse show" aria-expanded="true">
+        <div class="card-body">
+            <p>
+                Provide contextual feedback messages for typical user actions with the handful of available and flexible alert
+                messages.<br>
+                Read the official
+                <a href="https://getbootstrap.com/docs/4.5/components/alerts/" target="_blank">Bootstrap Documentation</a> for a
+                full list of instructions and other options.
+            </p>
+            <h6>Start using alerts with no worries!</h6>
+            <p>Check below table to use alerts with different types and designs.</p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Alert Type</th>
+                            <th>Class</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Default alert</strong></td>
+                            <td><code>.alert.alert-{color}</code></td>
+                            <td>
+                                <p class="mb-0">Use these classes to make alert.</p>
+                                <p class="mb-0">color: {primary | secondary | success | danger | warning | info | dark}</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alert Title</strong></td>
+                            <td><code>.alert-heading</code></td>
+                            <td>Use this class inside <code>.alert</code> to create alert with title.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dismissible Alerts</strong></td>
+                            <td><code>.alert-dismissible</code></td>
+                            <td>
+                                Use this class along with <code>.alert</code> and also add <code>.close</code> button inside
+                                <code>.alert</code> to make dismissible alert. It adds extra padding to the right of the alert and
+                                positions the <code>.close</code> button.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Alerts with icons</strong></td>
+                            <td>N/A</td>
+                            <td>Just add icon before your alert text to create a alert with icon.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-1"><strong>Referrals :</strong></p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bootstrap Link</strong></td>
+                            <td>
+                                <a href="https://getbootstrap.com/docs/4.5/components/alerts/" target="_blank">https://getbootstrap.com/docs/4.5/components/alerts/</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Template Page</strong></td>
+                            <td>
+                                <a href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-alerts.html" target="_blank">https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/component-alerts.html</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
 @section HeaderScripts{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
 }

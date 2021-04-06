@@ -38,6 +38,7 @@
       "wwwroot/lib/jquery-validate/jquery.validate.js",
       "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "wwwroot/lib/prism/prism.min.js"
+      "wwwroot/js/site.js"
     ]
   },
   {

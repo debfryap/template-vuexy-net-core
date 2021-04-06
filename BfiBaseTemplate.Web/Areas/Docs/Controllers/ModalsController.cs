@@ -13,5 +13,13 @@ namespace BfiBaseTemplate.Web.Areas.Docs.Controllers
         {
             return View();
         }
+        public IActionResult Example()
+        {
+            return PartialView("_Example");
+        }
+        public IActionResult ExampleSuccess()
+        {
+            return PartialView("_ExampleSuccess");
+        }
     }
 }
