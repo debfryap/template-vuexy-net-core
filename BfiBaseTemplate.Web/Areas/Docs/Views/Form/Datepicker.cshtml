@@ -19,10 +19,10 @@
         <div class="card-body">
             <p>
                 Originally created for reports at <a href="https://www.improvely.com/" target="_blank">Improvely</a>, the Date Range Picker can be attached to any webpage element to pop up two calendars for selecting dates, times, or predefined ranges like "Last 30 Days".
-    <br>Read the official
-    <a href="https://www.daterangepicker.com/" target="_blank">Date Range Picker Documentation</a> for a full list of
-    instructions and other options.
-</p>
+                <br>Read the official
+                <a href="https://www.daterangepicker.com/" target="_blank">Date Range Picker Documentation</a> for a full list of
+                instructions and other options.
+            </p>
             <h6>1. Initialize the plugin by referencing the necessary files:</h6>
             <div class="prism-show-language"><div class="prism-show-language-label">Markup</div></div><pre class=" my-1 language-markup"><code class=" language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/momentjs/latest/moment.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span><span class="token lf">
@@ -106,8 +106,10 @@
 
 @section HeaderScripts{
     <link rel="stylesheet" href="~/lib/daterangepicker/daterangepicker.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
 }
 @section FooterScripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js" integrity="sha512-YBk7HhgDZvBxmtOfUdvX0z8IH2d10Hp3aEygaMNhtF8fSOvBZ16D/1bXZTJV6ndk/L/DlXxYStP8jrF77v2MIg==" crossorigin="anonymous"></script>
     <script src="~/lib/daterangepicker/moment.min.js"></script>
     <script src="~/lib/daterangepicker/daterangepicker.min.js"></script>
     <script src="~/js/pages/datepicker.js"></script>
