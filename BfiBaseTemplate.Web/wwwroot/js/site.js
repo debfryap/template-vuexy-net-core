@@ -26,3 +26,18 @@ function darkMode() {
     }
 }
 darkMode();
+
+$.ajaxSetup({
+    error: function (jqXHR, textStatus, errorThrown) {
+        if (jqXHR.status === 401) {
+            swal({
+                title: "Session Expired",
+                text: "Session anda telah expired, silahkan untuk login kembali !",
+                icon: "warning"
+
+            }).then((value) => {
+                window.location.href = base_url + '/auth/login';
+            });
+        }
+    }
+});

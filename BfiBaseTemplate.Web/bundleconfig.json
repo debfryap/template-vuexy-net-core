@@ -2,6 +2,7 @@
   {
     "outputFileName": "wwwroot/css/dist/bfi-theme-core.min.css",
     "inputFiles": [
+      "wwwroot/css/vendors.min.css",
       "wwwroot/css/bootstrap.min.css",
       "wwwroot/css/bootstrap-extended.css",
       "wwwroot/css/colors.css",
@@ -17,6 +18,7 @@
   {
     "outputFileName": "wwwroot/css/dist/bfi-theme-core-auth.min.css",
     "inputFiles": [
+      "wwwroot/css/vendors.min.css",
       "wwwroot/css/bootstrap.min.css",
       "wwwroot/css/bootstrap-extended.css",
       "wwwroot/css/colors.css",
@@ -32,12 +34,12 @@
   {
     "outputFileName": "wwwroot/js/dist/bfi-themes-core.min.js",
     "inputFiles": [
+      "wwwroot/js/vendors.min.js",
       "wwwroot/js/core/app-menu.js",
       "wwwroot/js/core/app.js",
       "wwwroot/js/scripts/components.js",
       "wwwroot/lib/jquery-validate/jquery.validate.js",
       "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "wwwroot/lib/prism/prism.min.js"
       "wwwroot/js/site.js"
     ]
   },

@@ -10,9 +10,8 @@
     <partial name="_MetaData" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
     <link href="~/vendors/feather/iconfont.css" rel="stylesheet" />
-
-    <link rel="stylesheet" type="text/css" href="~/css/vendors.min.css">
     <environment include="Development">
+        <link rel="stylesheet" type="text/css" href="~/css/vendors.min.css">
         <link href="~/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="~/css/bootstrap-extended.css">
         <link rel="stylesheet" type="text/css" href="~/css/colors.css">
@@ -72,10 +71,8 @@
             <button class="btn btn-primary btn-icon scroll-top" type="button"><i class="feather icon-arrow-up"></i></button>
         </p>
     </footer>
-
-    <script src="~/js/vendors.min.js"></script>
-
     <environment include="Development">
+        <script src="~/js/vendors.min.js"></script>
         <script src="~/js/core/app-menu.js"></script>
         <script src="~/js/core/app.js"></script>
         <script src="~/js/scripts/components.js"></script>
@@ -83,7 +80,7 @@
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     </environment>
     <environment include="Production">
-        <script src="~/js/dist/bfi-themes-core.min.js"></script>
+        <script src="~/js/dist/bfi-themes-core.min.js" asp-append-version="true"></script>
     </environment>
     @RenderSection("FooterScripts", required: false)
 </body>
